@@ -1,0 +1,9 @@
+langchain
+openai
+faiss-cpu
+sqlalchemy
+requests
+tqdm
+python-dotenv
+ollama  # Optional: If you need the Ollama package itself.
+chainlit
