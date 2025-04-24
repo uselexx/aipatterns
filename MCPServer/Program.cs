@@ -12,7 +12,7 @@ builder.Services
     .AddMcpServer()
     .WithHttpTransport()
     .WithTools<CampusTool>()
-    .WithTools<EchoTool>();
+    .WithTools<WeatherTool>();
 
 var app = builder.Build();
 
@@ -21,10 +21,10 @@ app.MapMcp();
 app.Run("http://localhost:5000");
 
 [McpServerToolType]
-public class EchoTool
+public class WeatherTool
 {
-    [McpServerTool, Description("Echoes the message back to the client.")]
-    public static string Echo(string message) => $"hello {message}";
+    [McpServerTool, Description("Provides the current weather for the given city.")]
+    public static string GetWeather(string message) => $"Current weather in {message} is sunny";
 }
 
 [McpServerToolType]
