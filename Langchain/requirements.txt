@@ -1,9 +1,17 @@
-langchain
-openai
-faiss-cpu
-sqlalchemy
-requests
-tqdm
-python-dotenv
-ollama  # Optional: If you need the Ollama package itself.
+autogen-agentchat
+autogen-core
+autogen-ext[ollama]
 chainlit
+chromadb
+faiss-cpu
+langchain
+langchain-embeddings-openai
+langchain-ollama
+langchain-openai
+langchain-text-splitters
+pyautogen
+pypdf
+python-dotenv
+requests
+sqlalchemy
+tqdm
